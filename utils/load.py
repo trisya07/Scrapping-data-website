@@ -33,7 +33,7 @@ def load_to_gsheet(df, spreadsheet_name):
         sheet.share('', perm_type='anyone', role='writer')
 
         # (Opsional) Share ke email pribadi kamu supaya spreadsheet muncul di Google Drive kamu
-        sheet.share('trisyanurmayanti07@gmail.com', perm_type='user', role='writer')
+        sheet.share('namaemailkamu@gmail.com', perm_type='user', role='writer')
 
         # Ambil worksheet pertama (atau buat worksheet baru jika tidak ada)
         worksheet = sheet.get_worksheet(0) or sheet.sheet1
